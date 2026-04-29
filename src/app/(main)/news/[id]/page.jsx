@@ -11,7 +11,7 @@ import { IoEye } from 'react-icons/io5';
 
 
      const {id} = await params;
-    console.log(id, 'paramssssss')
+    // console.log(id, 'paramssssss')
 
     const news = await getNewsDetailsById(id);
 
@@ -30,7 +30,7 @@ const NewsDetails =async ({params}) => {
     // console.log(simething, 'this is params' , 'thi is  idddddddddddddddd',id)
      
     const news = await getNewsDetailsById(id)
-    console.log(news, ' news is    hear')
+    // console.log(news, ' news is    hear')
 
     return (
          <div className="card bg-base-100 p-3.5 max-w-4xl mx-auto shadow-sm">

@@ -9,7 +9,7 @@ const DetailsPage = async ({ params }) => {
   const categoriesData = await getCatagories();
   const categories = categoriesData.news_category;
 
-  console.log(categories)
+  // console.log(categories)
 
   const { newsId } = await params;
 
