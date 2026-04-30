@@ -11,7 +11,6 @@ export async function proxy(request) {
     const session = await auth.api.getSession({
         headers: await headers()
     })
-  
     console.log('sesssssssssssssssss',  session, ' this is sessionnnnnnnnnnnnnnnnn')
 
   if(!session){
@@ -24,7 +23,7 @@ return NextResponse.next()
  
  
 export const config = {
-  matcher: ['/about', '/carrier', '/news/:path*'],
+  matcher: ['/about',  '/news/:path*'],
 
 //   :path*    etar maddome mean kore j eta  dynamic  could be /:id* or any thing
 }
