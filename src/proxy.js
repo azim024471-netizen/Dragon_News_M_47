@@ -6,7 +6,7 @@ import { headers } from 'next/headers';
 export async function proxy(request) {
         
     // console.log('hello i ammmmmm',request, 'this is request from proxyyyyyyyyyyyyyyy')
-  const iaLoggedIn = true;
+  // const iaLoggedIn = true;
 
     const session = await auth.api.getSession({
         headers: await headers()
